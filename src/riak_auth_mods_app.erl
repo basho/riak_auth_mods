@@ -22,12 +22,12 @@
          stop/1]).
 
 start() ->
-    application:start(lager).
+    application:start(riak_core_app_mods).
 
 start(_StartType, _StartArgs) ->
     riak_core:register(riak_auth_mods, [{auth_mod, {pam,
                                                     riak_auth_mods_pam}}]),
-    {ok, Pid} = lager_sup:start_link(),
+    {ok, Pid} = riak_auth_mods_sup:start_link(),
     {ok, Pid}.
 
 stop(_) ->
