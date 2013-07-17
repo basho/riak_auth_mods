@@ -1,0 +1,16 @@
+%% -*- tab-width: 4;erlang-indent-level: 4;indent-tabs-mode: nil -*-
+%% ex: ts=4 sw=4 et
+{application, riak_auth_mods,
+ [
+  {description, "Third party authentication modules for Riak"},
+  {vsn, "0.1.0"},
+  {modules, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {registered, [riak_auth_mods_sup]},
+  {mod, {riak_auth_mods_app, []}},
+  {env, []}
+ ]}.
+
