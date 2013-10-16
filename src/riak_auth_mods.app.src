@@ -3,7 +3,7 @@
 {application, riak_auth_mods,
  [
   {description, "Third party authentication modules for Riak"},
-  {vsn, "0.1.0"},
+  {vsn, git},
   {modules, []},
   {applications, [
                   kernel,
@@ -13,4 +13,3 @@
   {mod, {riak_auth_mods_app, []}},
   {env, []}
  ]}.
-
