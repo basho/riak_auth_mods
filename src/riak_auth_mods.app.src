@@ -7,7 +7,8 @@
   {modules, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  canola
                  ]},
   {registered, [riak_auth_mods_sup]},
   {mod, {riak_auth_mods_app, []}},

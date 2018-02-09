@@ -17,12 +17,8 @@
 -module(riak_auth_mods_app).
 
 -behaviour(application).
--export([start/0,
-         start/2,
+-export([start/2,
          stop/1]).
-
-start() ->
-    application:start(riak_core_app_mods).
 
 start(_StartType, _StartArgs) ->
     riak_core:register(riak_auth_mods, [{auth_mod, {pam,
