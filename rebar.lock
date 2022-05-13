@@ -1,4 +1,0 @@
-[{<<"canola">>,
-  {git,"git://github.com/basho/canola.git",
-       {ref,"2cd39378442f3dc727de22289243b3c4d56f25fd"}},
-  0}].
