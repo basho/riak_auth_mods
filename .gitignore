@@ -3,3 +3,4 @@ deps/*
 priv/*
 ebin/*
 _build
+rebar.lock
